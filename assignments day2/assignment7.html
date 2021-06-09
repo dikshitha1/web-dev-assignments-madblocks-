@@ -1,0 +1,16 @@
+<!--Assignment-7: Create a button, when you click on the button some portion of the paragraph should be updated.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment-7</title>
+</head>
+<body>
+	<p> <span id="t1" class="letter">boot camp </span>is going good</p>
+	<button type="button" onclick="changetext()">change text</button>
+	<script>
+		function changetext() {
+			document.getElementById("t1").innerHTML="Web-dev course "
+		}
+	</script>
+</body>
+</html>
