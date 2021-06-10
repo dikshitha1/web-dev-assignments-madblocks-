@@ -1,0 +1,31 @@
+<!--Assignment - 8: Create an input that reads from the data list through the select tag and display the data in the paragraph tag of HTML-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown Demo</title>
+	<style>
+		p{
+			color:blueviolet;
+		}
+	</style>
+</head>
+<body><label>Choose Your city</label>
+	<select id='city'>
+		<option>Hyderabad</option>
+		<option>Chennai</option>
+		<option>New Delhi</option>
+		<option>Agra</option>
+		<option>Rajasthan</option>
+		<option>Vijayawada</option>
+		<option>Mumbai</option>
+	</select>
+	<button onclick="readData()">Submit</button>
+	<p id="result"></p>
+	<script>
+		function readData() {
+			var c=document.getElementById('city').value;
+			document.getElementById('result').innerHTML=c;
+		}
+	</script>
+</body>
+</html>
